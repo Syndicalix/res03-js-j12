@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="fr">  
+    <head>        
+        <meta charset="utf-8">  
+        <title>Le titre de ma page</title>  
+    </head>    
+    <body>        
+        <header>
+            <nav>
+            
+            </nav>
+        </header>  
+        <main>
+            <section id="app">
+                <h1 v-if="animal === 'Dogs'">Dogs</h1>
+                <h1 v-else-if="animal === 'Cats'">Cats</h1>
+                <h1 v-else>Not Dogs or Cats</h1>
+                
+                <p>{{ animal }}</p>
+                <button @click="changeAnimals">Dogs / Cats</button>
+            </section>
+        </main>  
+        <footer>
+                 
+        </footer>  
+    </body>
+<script type="module" src="index.js"></script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="fr">  
+    <head>        
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <title>Le titre de ma page</title>  
+    </head>    
+    <body>        
+        <header>
+            <nav>
+            
+            </nav>
+        </header>  
+        <main>
+            <ul id="app">
+                <template v-for="number in numbers">
+                    <li v-if="number === '12'" class="red">12</li>
+                    <li v-else-if="number === '35'" class="blue">35</li>
+                    <li v-else-if="number === '56'" class="red">56</li>
+                    <li v-else-if="number === '67'" class="blue">67</li>
+                    <li v-else-if="number === '42'" class="red">42</li>
+                    <li v-else-if="number === '93'" class="blue">93</li>
+                </template>
+            </ul>
+        </main>  
+        <footer>
+                 
+        </footer>  
+    </body>
+<script type="module" src="index.js"></script>
+</html>

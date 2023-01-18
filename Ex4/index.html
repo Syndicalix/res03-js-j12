@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+<html lang="fr">  
+    <head>        
+        <meta charset="utf-8">  
+        <title>Le titre de ma page</title>  
+    </head>    
+    <body>        
+        <header>
+            <nav>
+            
+            </nav>
+        </header>  
+        <main>
+            <section id="app">  
+                <h2>Notes</h2>  
+                    <ul>        
+                        <li v-for="grade in grades">  
+                            {{ grade }}  
+                        </li>  
+                    </ul>    
+            <form @submit.prevent="addGrade">  
+            <fieldset>            
+                    <label for="grade">Saisir la note</label>  
+                    <input type="text" name="grade" id="grade" />  
+            </fieldset>        
+                <button type="submit">Ajouter</button>  
+            </form>
+            </section>
+        </main>  
+        <footer>
+                 
+        </footer>  
+    </body>
+<script type="module" src="index.js"></script>
+</html>
